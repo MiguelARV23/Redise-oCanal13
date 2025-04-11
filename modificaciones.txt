@@ -1,0 +1,6 @@
+1//04/2025
+he creado un portal para cada estado, y los he vinculado a travez del header
+
+he completado la pagina de Ventas incluyendo el video en repeticionm por lo que la pagina de ventas se puede considerar en su mayoria conclusa
+
+las otras paginas todavia no tienen sus funciones completadas, me encargare esta semana de completar estas funciones, reemplazar los placeholder con material completado, trabajar y finalizar el resto de las paginas por crear, y trabajar con el sistema de cuentas 
