@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticia Placeholder</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- Encabezado fijo que incluye ambas barras -->
+ <header class="fixed-top">
+  <!-- Barra de Señales en Vivo (superior) -->
+  <div class="bg-danger text-white py-2">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div>
+        <strong>SEÑAL EN VIVO</strong>
+      </div>
+      <div class="d-flex flex-wrap">
+        <span class="mx-2">Bajío</span>
+        <span class="mx-2">Campeche</span>
+        <span class="mx-2">Cancún</span>
+        <span class="mx-2">Chiapas</span>
+        <span class="mx-2">Guadalajara</span>
+        <span class="mx-2">Puebla</span>
+        <span class="mx-2">Oaxaca</span>
+        <span class="mx-2">Yucatán</span>
+        <span class="mx-2">Michoacán</span>
+      </div>
+    </div>
+  </div>
+  <!-- Barra de Navegación (inferior) -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181B2F;">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="IMG/cropped-LOGO-CANAL-TRECE.png" alt="Canal 13" height="40" />
+      </a>
+      <!-- Botón de menú responsive -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Enlaces de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">PORTADA <span class="sr-only">(actual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NOTICIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PROGRAMACIÓN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">VENTAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+        </ul>
+        <!-- Barra de búsqueda -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Buscar" />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="container mt-4"  style="padding-top: 120px;">
+        <div class="row">
+            <!-- Contenido Principal -->
+            <main class="col-lg-8">
+                <article class="bg-light p-4 rounded">
+                    <h1 class="fw-bold">Título de la Noticia Placeholder</h1>
+                    <p class="text-muted">Por <a href="#" class="text-decoration-none">Autor Placeholder</a> / Fecha Placeholder</p>
+                    <img src="IMG/istockphoto-1147544807-612x612.jpg" class="img-fluid rounded mb-3" alt="Imagen de la noticia">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                </article>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+                <div class="bg-light p-3 rounded mb-3">
+                    <h5 class="fw-bold">Últimas noticias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Noticia reciente 1</a></li>
+                        <li><a href="#" class="text-decoration-none">Noticia reciente 2</a></li>
+                        <li><a href="#" class="text-decoration-none">Noticia reciente 3</a></li>
+                    </ul>
+                </div>
+                <div class="bg-light p-3 rounded">
+                    <h5 class="fw-bold">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Noticias (2,574)</a></li>
+                        <li><a href="#" class="text-decoration-none">Programación c13 (133)</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="text-center text-white py-4" style="background-color: #181B2F;">
+      <p class="mb-0">&copy; 2025 Canal 13 México. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

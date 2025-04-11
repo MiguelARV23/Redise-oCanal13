@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas - Canal 13</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .section-title {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            max-width: 200px;
+        }
+        .sales-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .sales-info p {
+            font-size: 18px;
+        }
+        .divider {
+            border-top: 2px solid #dc3545;
+            margin: 20px 0;
+            width: 50%;
+            margin-left: auto;
+            margin-top: 40px;
+        }
+        .swiper {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+        .swiper-slide {
+            background: #dce0ee;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .swiper-slide img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 10px;
+        }
+        /* Botones de navegación personalizados */
+        .swiper-button-prev, .swiper-button-next {
+            color: #dc3545;
+        }
+        .btn-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 200px;
+            height: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: #6c757d; /* Color gris */
+            color: white; /* Texto blanco */
+            border-radius: 35px; /* Bordes curvos */
+            margin: 25px; /* Espaciado entre botones */
+        }
+        .btn-logo img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .socio-comercial {
+            width: 100%; /* Asegura que cubra todo el ancho */
+            padding: 50px 20px;
+            background-color: #002244; /* Azul oscuro */
+            color: white;
+            width: 100vw; /* Ancho total de la pantalla */
+            margin-left: calc(-50vw + 50%); /* Alinear al borde de la pantalla */
+        }
+        .socio-comercial .content {
+            max-width: 800px;
+            margin-left: 0;
+            text-align: left;
+        }
+        .socio-comercial .btn-container {
+            display: flex;
+            flex-direction: row;
+            gap: 35px; /* Separación entre botones */
+        }
+        .socio-comercial .btn-container .btn {
+            background-color: #ff675b; /* Color rojo */
+            border-radius: 15px; /* Bordes suavizados */
+            width: 200px; /* Anchura reducida */
+            color: white;
+            border: none;
+        }
+        .sintoniza-section {
+          
+          width: 100%; /* Asegura que cubra todo el ancho */
+          padding: 50px 20px;
+            background-color: #d9534f; /* Rojo similar al de la imagen */
+            padding: 50px 20px;
+            width: 100vw; /* Ancho total de la pantalla */
+            margin-left: calc(-50vw + 50%); /* Alinear al borde de la pantalla */
+            text-align: center;
+        }
+        .sintoniza-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .sintoniza-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 18px;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        .sintoniza-btn:hover {
+            background: white;
+            color: #d9534f;
+        }
+
+        .vc_video-bg-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Fondo del video */
+        .vc_video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+
+        /* Iframe (video) */
+        .vc_video-bg iframe {
+            width: 120vw; /* Se aumenta un poco para asegurar cobertura total */
+            height: 100vh;
+            object-fit: cover;
+            pointer-events: none;
+            border: none;
+        }
+
+
+        .vc_video-bg-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Fondo del video */
+        .vc_video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+
+        /* Iframe (video) */
+        .vc_video-bg iframe {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            pointer-events: none;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="fixed-top">
+
+
+        <!-- Barra de Señales en Vivo (superior) -->
+        <div class="bg-danger text-white py-2">
+          <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+              <strong>SEÑAL EN VIVO</strong>
+            </div>
+            <div class="d-flex flex-wrap">
+              <span class="mx-2">Bajío</span>
+              <span class="mx-2">Campeche</span>
+              <span class="mx-2">Cancún</span>
+              <span class="mx-2">Chiapas</span>
+              <span class="mx-2">Guadalajara</span>
+              <span class="mx-2">Puebla</span>
+              <span class="mx-2">Oaxaca</span>
+              <span class="mx-2">Yucatán</span>
+              <span class="mx-2">Michoacán</span>
+            </div>
+          </div>
+        </div>
+        <!-- Barra de Navegación (inferior) -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181B2F;">
+          <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="IMG/cropped-LOGO-CANAL-TRECE.png" alt="Canal 13" height="40" />
+            </a>
+            <!-- Botón de menú responsive -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Enlaces de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">PORTADA <span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NOTICIAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PROGRAMACIÓN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">VENTAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+              </ul>
+              <!-- Barra de búsqueda -->
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Buscar" />
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+      <div class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_video-bg-container">
+        
+        <!-- Video de fondo -->
+        <div class="vc_video-bg vc_hidden-xs">
+            <iframe id="video-bg" frameborder="0" allowfullscreen
+                allow="autoplay; encrypted-media"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Video Institucional">
+            </iframe>
+        </div>
+
+        <!-- Contenido sobre el video -->
+        <div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs">
+            <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                    <h1>Bienvenido a Canal 13</h1>
+                    <p>Este es un video de fondo sin interacción.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   <div class="container" style="padding-top: 120px;">
+        
+        <div class="logo-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="IMG/cropped-LOGO-CANAL-TRECE.png" alt="Canal 13 Logo">
+                </div>
+                <div class="col-8 sales-info">
+                    <h2 class="section-title">CANAL 13 MÉXICO</h2>
+                    <p>Cuarenta años trabajando nos han dejado un gran aprendizaje y queremos compartir con todos nuestros socios comerciales la oportunidad que ofrecemos en Albavisión, la red que nos conecta a todos.</p>
+                </div>
+              </div>
+            
+        </div>
+
+        <div class="row">
+          <h3 class="section-title text-center">COBERTURA EN MÉXICO</h3>
+          <hr class="divider">
+        </div>
+        
+        
+        
+        <div class="text-center">
+            <img src="IMG/cobertura-Canal-13.png" alt="Cobertura en México" class="img-fluid">
+        </div>
+        
+        <div class="row">
+          <h3 class="section-title text-center">NUESTROS TALENTOS</h3>
+          <hr class="divider">
+        </div>        
+        
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+              <!-- 20 slides -->
+              <div class="swiper-slide"><img src="talento1.png" alt="Talento 1"></div>
+              <div class="swiper-slide"><img src="talento2.png" alt="Talento 2"></div>
+              <div class="swiper-slide"><img src="talento3.png" alt="Talento 3"></div>
+              <div class="swiper-slide"><img src="talento4.png" alt="Talento 4"></div>
+              <div class="swiper-slide"><img src="talento5.png" alt="Talento 5"></div>
+              <div class="swiper-slide"><img src="talento6.png" alt="Talento 6"></div>
+              <div class="swiper-slide"><img src="talento7.png" alt="Talento 7"></div>
+              <div class="swiper-slide"><img src="talento8.png" alt="Talento 8"></div>
+              <div class="swiper-slide"><img src="talento9.png" alt="Talento 9"></div>
+              <div class="swiper-slide"><img src="talento10.png" alt="Talento 10"></div>
+              <div class="swiper-slide"><img src="talento11.png" alt="Talento 11"></div>
+              <div class="swiper-slide"><img src="talento12.png" alt="Talento 12"></div>
+              <div class="swiper-slide"><img src="talento13.png" alt="Talento 13"></div>
+              <div class="swiper-slide"><img src="talento14.png" alt="Talento 14"></div>
+              <div class="swiper-slide"><img src="talento15.png" alt="Talento 15"></div>
+              <div class="swiper-slide"><img src="talento16.png" alt="Talento 16"></div>
+              <div class="swiper-slide"><img src="talento17.png" alt="Talento 17"></div>
+              <div class="swiper-slide"><img src="talento18.png" alt="Talento 18"></div>
+              <div class="swiper-slide"><img src="talento19.png" alt="Talento 19"></div>
+              <div class="swiper-slide"><img src="talento20.png" alt="Talento 20"></div>
+          </div>
+          
+          <!-- Botones de navegación -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="row">
+          <h3 class="section-title text-center">PRODUCTOS PUBLICITARIOS</h3>
+          <hr class="divider">
+        </div> 
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+          <button class="btn btn-logo">
+            <img src="IMG/placeholder-icon-2048x2048-48kucnce.png" alt="TV">
+              <span class="product-text">TV</span>
+          </button>
+          <button class="btn btn-logo">
+            <img src="IMG/placeholder-icon-2048x2048-48kucnce.png" alt="TV">
+              <span class="product-text">WEB</span>
+          </button>
+          <button class="btn btn-logo"><img src="IMG/placeholder-icon-2048x2048-48kucnce.png" alt="TV">
+            <span class="product-text">APV</span></button>
+          <button class="btn btn-logo"><img src="IMG/placeholder-icon-2048x2048-48kucnce.png" alt="TV">
+            <span class="product-text">R.R.S.S.</span></button>
+      </div>
+
+      <div class="socio-comercial">
+        <div class="container">
+            <div class="content">
+                <h2 class="text-danger">¿DESEAS SER UN SOCIO COMERCIAL?</h2>
+                <p>Únete a nuestra red de socios comerciales y aprovecha los beneficios exclusivos de trabajar con nosotros.</p>
+                <div class="btn-container">
+                    <button class="btn">Más Información</button>
+                    <button class="btn">Únete Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <h3 class="section-title text-center">ENVIANOS UN MENSAJE</h3>
+      <hr class="divider">
+    </div> 
+
+        <div class="logo-container">
+          <div class="row">
+              <div class="col-5">
+                  <img src="IMG/cropped-LOGO-CANAL-TRECE.png" alt="Canal 13 Logo">
+              </div>
+              <div class="col-7 sales-info">
+                <form>
+                  <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Tu nombre ...">
+                  </div>
+                  <div class="mb-3">
+                      <input type="email" class="form-control" placeholder="Email ...">
+                  </div>
+                  <div class="mb-3">
+                      <textarea class="form-control" rows="4" placeholder="Tu mensaje ..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark w-100">ENVIAR MENSAJE</button>
+              </form>
+              </div>
+            </div>
+          
+      </div>
+      <div class="sintoniza-section">
+        <h2 class="sintoniza-title">SINTONIZA NUESTRA PROGRAMACIÓN EN VIVO</h2>
+        <div class="row">
+          <div class="col-4">
+            <img src="IMG/streamingc13-250x180.png" alt="">
+          </div>
+          <div class="container col-8">
+              <div class="row justify-content-center">
+                  <div class="col-auto">
+                      <button class="btn sintoniza-btn">Bajío</button>
+                      <button class="btn sintoniza-btn">Campeche</button>
+                      <button class="btn sintoniza-btn">Cancún</button>
+                      <button class="btn sintoniza-btn">Chiapas</button>
+                      <button class="btn sintoniza-btn">Guadalajara</button>
+                      <button class="btn sintoniza-btn">Michoacán</button>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-auto">
+                      <button class="btn sintoniza-btn">Oaxaca</button>
+                      <button class="btn sintoniza-btn">Puebla</button>
+                      <button class="btn sintoniza-btn">Tabasco</button>
+                      <button class="btn sintoniza-btn">Tapachula</button>
+                      <button class="btn sintoniza-btn">Veracruz</button>
+                      <button class="btn sintoniza-btn">Yucatán</button>
+                  </div>
+              </div>
+              <div class="row justify-content-center mt-3">
+                  <div class="col-auto">
+                      <button class="btn sintoniza-btn">CDMX</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+
+    <footer class="text-center text-white py-4" style="background-color: #181B2F;">
+      <p class="mb-0">&copy; 2025 Canal 13 México. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5, // Muestra hasta 5 talentos a la vez
+        spaceBetween: 20,
+        loop: true, // Hace que el carrusel sea infinito
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            1200: { slidesPerView: 5 },
+            1024: { slidesPerView: 4 },
+            768: { slidesPerView: 3 },
+            480: { slidesPerView: 2 },
+            320: { slidesPerView: 1 }
+        }
+    });
+</script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let videoBg = document.getElementById("video-bg");
+            let videoID = "UTLmPEDB_xM"; // ID del video de YouTube
+
+            // Configurar URL con parámetros para autoplay, mute, loop y sin controles
+            let videoURL = `https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1&loop=1&playlist=${videoID}&controls=0&showinfo=0&rel=0&modestbranding=1`;
+
+            // Asignar URL al iframe
+            videoBg.src = videoURL;
+        });
+    </script>
+</body>
+</html>
