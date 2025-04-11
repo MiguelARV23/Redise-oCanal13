@@ -22,6 +22,10 @@ body {
     object-fit: contain; /* O 'cover' según el efecto deseado */
   }
   
+  .headervivo{
+    font-size: 12px;
+    color: white;
+  }
   
   /* Tarjetas con efecto hover */
   .hover-card {
@@ -80,4 +84,20 @@ body {
 .carousel-item img {
     max-height: 200px;
     object-fit: cover;
+}
+
+.divider {
+  border-top: 2px solid #dc3545;
+  margin: 20px 0;
+  width: 50%;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.estado {
+  color: #dc3545; /* Color rojo */
+  margin-left: 110px; /* Ajusta el valor para mover más o menos */
+  font-size: 32px; /* Aumenta el tamaño del texto */
+  font-weight: bold; /* Opcional: Hace el texto más grueso */
+  margin-top: 20px; /* Mueve el texto hacia abajo */
 }
