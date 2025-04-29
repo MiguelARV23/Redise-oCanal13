@@ -1,0 +1,51 @@
+.swiper-multirow {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 180px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .overlay-text {
+    transform: translateY(0);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+  }
