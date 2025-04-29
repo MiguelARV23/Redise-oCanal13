@@ -1,6 +1,15 @@
-1//04/2025
-he creado un portal para cada estado, y los he vinculado a travez del header
+29/04/2025
 
-he completado la pagina de Ventas incluyendo el video en repeticionm por lo que la pagina de ventas se puede considerar en su mayoria conclusa
+Si lee esto, probablemente vaya una ultima vez esta semana a las oficinas para poder finalizar formalmente para bien o para mal mis estadias
 
-las otras paginas todavia no tienen sus funciones completadas, me encargare esta semana de completar estas funciones, reemplazar los placeholder con material completado, trabajar y finalizar el resto de las paginas por crear, y trabajar con el sistema de cuentas 
+He logrado bastante progreso estas 3 semanas, aun si he fallado en subir dicho progreso semanalmente como se habia acordado, sin embargo la cantidad de obstaculos con las que me he estado tropesando me ha llevado a la conclusion de que es imposible para mi terminar todo el proyecto a tiempo
+
+
+Puedo concluir que en cuanto al apartado visual, el proyecto esta totalmente finalizado, todo esta conectado como deberia estar, pero lastimosamente no todas las funciones estan disponibles y no creo tener el tiempo para completarlas. mas que nada porque dichas funciones, entre ellas: Bases de datos, y subida de contenido. son de las cosas en las que tengo mucho menos experiencia
+
+
+
+Aun si no he podido cumplir con sus espectativas, le agradezco profundamente el que me haya permitido trabajar en este proyecto, que lastimosamente superaba mis capacidades. estare en contacto con usted durante esta semana si necesito una cosa mas.
+
+
+-Miguel
