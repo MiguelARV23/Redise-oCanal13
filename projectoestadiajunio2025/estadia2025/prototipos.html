@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrusel de 3 Renglones</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .swiper-multirow {
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 180px;
+      border: none;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .overlay-text {
+      transform: translateY(0);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: black;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="swiper swiper-multirow">
+    <div class="swiper-wrapper">
+      <!-- Generar 36 cartas (12 por renglón, 3 renglones) -->
+      <!-- Puedes duplicar y personalizar las imágenes -->
+      <!-- Fila 1 -->
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 1</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 2</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 3</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 4</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 5</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 6</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 7</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 8</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 9</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 10</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 11</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 12</div></div></div>
+      <!-- Fila 2 -->
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 13</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 14</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 15</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 16</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 17</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 18</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 19</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 20</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 21</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 22</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 23</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 24</div></div></div>
+      <!-- Fila 3 -->
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 25</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 26</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 27</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 28</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 29</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 30</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 31</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 32</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 33</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 34</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 35</div></div></div>
+      <div class="swiper-slide"><div class="card"><img src="IMG/istockphoto-1147544807-612x612.jpg"><div class="overlay-text">Texto 36</div></div></div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-multirow', {
+      slidesPerView: 6,
+      slidesPerGroup: 6,
+      spaceBetween: 20,
+      loop: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      grid: {
+        rows: 3,
+        fill: 'row',
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 },
+        1200: { slidesPerView: 6 },
+      }
+    });
+  </script>
+</body>
+</html>

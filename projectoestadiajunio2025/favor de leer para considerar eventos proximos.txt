@@ -1,0 +1,57 @@
+a inicios de Junio, con la extension que he pedido a punto de concluir, he considerado todo lo que he hecho, y todo lo que podria hacer durante el poco tiempo que me 
+queda, y tras haberlo meditado bastante he llegado a una conclusion en particular en la cual incluire mis avances hasta el momento:
+
+Todo con respecto al contenido visual del sitio web, por supuesto refiriendome al sitio web disponible por el espectador, ha sido completado de forma satisfactoria, 
+en la carpeta Sitio Web encontrara capturas de pantalla de como he considerado que se podria ver el sitio web con una optimizacion visual que incluye: reduccion de 
+tamaño de ciertos bloques y complementos de las paginas (En particular de la barra de navegacion), y el rediseñado de 6 paginas del sitio web: 
+
+-Programacion
+En lugar de tener una tabla contiene un carrusel que puede contener una imagen de portada para el programa, todo programado para que se pueda seleccionar el dia de 
+la semana y hora del dia en el que se veran los programas.
+
+-Contactos
+No hice muchos cambios criticos aqui, lo mas importante que realize fue el añadir un formulario para enviar un mensaje a correo electronico, 
+formulario que estaba presente en otras paginas menos en esta, que considero que es mucho mas importante y congruente que se encuentre en dicha pagina.
+
+-Ventas/Television/Web/RRSS
+Hize una estructura similar al carrusel que utilize en el bloque de programacion de la pagina principal del sitio web, acumule los videos de cada pagina y los agrupe 
+en un carrusel correspondiente a cada pagina, esto con la funcion de reducir el tamaño de la pagina y ahorrar la necesidad de realizar scroll.
+
+
+Sin embargo, me apena informarle que: si bien todo el sitio web esta conectado entre si con los links correspondientes, no he podido ser capaz de hacer funcionar con 
+exito el back end que involucra la subida de contenido. He trabajado todo lo posible en Admin.php (la pagina de administracion del sitio web, desde donde se deberia 
+subir el contenido). La base de datos funciona correctamente, incluyendo la capacidad de subir y cargar contenido, pero me he encontrado con problemas que me han 
+estado tomando demasiado tiempo corregir, sumando el hecho de que debo tambien encargarme de la casa, y que mi laptop ha estado presentando problemas recientes que 
+realentizan mi habilidad para manejar el software para poder progresar con el codigo. 
+
+Siendo este el caso me veo en la conclusion de informarle que me sera imposible poder completar el codigo PHP en esta semana, por lo tanto el progreso que llevo solo
+sirve como sugerencia para poder hacer modificaciones visuales en un futuro por parte de un equipo completo de programadores, no lo puedo completar para poder ser capaz
+de subir noticias, modificar el contenido de la programacion, y algo que ya consideraba imposible para mi habilidad actual: el poder hacer transmisiones en vivo 
+funcionales. Estas dificultades se presentan por mi falta de preparacion con respecto al sitio web, y tambien a la falta de recursos, puesto a que las dificultades
+se habrian reducido si hubiera podido tener acceso a los archivos del codigo original, archivos que ya me ha explicado el porque no pudo proveerlos, no le culpo por eso.
+
+He considerado la idea de que, si pudiera obtener otras 2 o 3 semanas de extension, podria completarlo todo para que tenga la capacidad de subir noticias al sitio web
+desde la pagina de administracion (Que por ahora, lo unico funcional que tiene es la opcion de subir notas), y tambien para modificar el contenido de la pagina de 
+programacion, sin embargo quiero que usted tambien considere si esta es la mejor idea, ya que el proposito principal de mi proyecto era el poder hacer rediseños y 
+mejoras visuales de su sitio web, y he sido capaz de completar con eso mismo, sin mencionar que considero que de elegir el concluir el proyecto a este punto seria la
+mejor alternativa, para que de esa forma no tenga que seguir pidiendo mas de su tiempo, y asi pueda yo enfocarme en poder conseguir un trabajo y continuar con nuestros
+caminos habiendo concluido nuestro trato, despues de todo toda la documentacion con respecto a las estadias ya ha sido firmada y concluida, por lo que no necesito que 
+haga mas por mi.
+
+Si asi usted lo desea, puedo seguir trabajando en el sitio web, para hacerlo lo mas completo que pueda durante lo que queda de mes y hacerlo en su mayoria funcional,
+exceptuando la opcion de transmisiones en vivo, y asi poder entregarlo a la gente correspondiente para que de su opinion. O si usted lo prefiere de la otra forma, 
+puede confirmarme que no hace falta que continue con el proyecto, y enviar el contenido actual a quien tenga que enviarselo para que pueda considerar mis propuestas de
+rediseño.
+
+
+
+
+Habiendo escrito esto, solo me queda una de 2 cosas que decir
+Si usted prefiere que continue con el proyecto, el que me perdone por la falta de eficiencia, y que le agradezco todo lo que me ha permitido hacer, sea pertinente o no.
+Si usted prefiere que concluya el proyecto, le debo de dar mis mas sinceros agradecimientos por la oportunidad de realizar mis estadias con usted, y por ayudarme con
+los documentos, que no me considero digno de su apoyo, y que se lo agradezco eternamente por darme la oportunidad para graduarme de mis estudios.
+
+Esperare pacientemente su respuesta por whatsapp, si usted prefiere decirme su decision por mensaje, o en persona, estare esperandole.
+
+Gracias por su ayuda y su tiempo
+-Miguel Angel Arreola Valenzuela

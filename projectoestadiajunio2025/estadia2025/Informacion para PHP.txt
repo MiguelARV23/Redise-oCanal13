@@ -1,0 +1,42 @@
+Ninguno de los archivos PHP funcionara a no ser que siga los siguientes pasos
+
+-debe tener una carpeta Xampp (disponible al descargar Xampp)
+-la carpeta estadias debe estar dentro de la carpeta htdocs, dentro de la carpeta Xampp
+-Debe utilizar Mysql (MariaDB o Workbench) y integrar los siguientes codigos, de lo contrario las paginas no recibiran y tampoco cargaran datos
+
+
+CREATE DATABASE IF NOT EXISTS sistema_cuentas;
+*ejecute y luego ejecute el siguiente codigo*
+
+USE sistema_cuentas;
+
+*cada una de las tablas debe ser escrita o pegada y ejecutada por separado
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    telefono VARCHAR(20),
+    contrasena VARCHAR(255) NOT NULL,
+    rol VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS notas (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    asunto VARCHAR(255) NOT NULL,
+    descripcion TEXT NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    fecha_creacion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE IF NOT EXISTS noticias (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255),
+    autor VARCHAR(255),
+    categoria VARCHAR(100),
+    estado VARCHAR(100),
+    descripcion TEXT,
+    imagen LONGBLOB,
+    fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ventas Web</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      padding-top: 160px;
+    }
+    .swiper-slide-ventas {
+      width: auto !important;
+      flex-shrink: 0;
+    }
+    .swiper-slide-ventas img {
+      width: 100%;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .swiper-ventas .swiper-wrapper {
+  justify-content: center;
+}
+
+    .swiper-ventas {
+      padding: 15px 0;
+    }
+    .swiper-wrapper-ventas {
+      display: flex;
+      gap: 15px;
+    }
+    .video-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #c62828;
+      margin-left: 10px;
+    }
+    .video-hr {
+      border: 0;
+      height: 5px;
+      background-color: #c62828;
+      margin: 0 10px 15px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header superior -->
+  <header class="fixed-top">
+    <!-- Barra de Señales en Vivo -->
+    <div class="bg-danger text-white py-2">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          <strong>SEÑAL EN VIVO</strong>
+        </div>
+        <div class="d-flex flex-wrap headervivo">
+          <a href="portalbajio.html" class="mx-2 text-decoration-none text-white">Bajío</a>
+          <a href="portalcampeche.html" class="mx-2 text-decoration-none text-white">Campeche</a>
+          <a href="portalcancun.html" class="mx-2 text-decoration-none text-white">Cancún</a>
+          <a href="portalcdmx.html" class="mx-2 text-decoration-none text-white">CDMX</a>
+          <a href="portalchiapas.html" class="mx-2 text-decoration-none text-white">Chiapas</a>
+          <a href="portalguadalajara.html" class="mx-2 text-decoration-none text-white">Guadalajara</a>
+          <a href="portalmichoacan.html" class="mx-2 text-decoration-none text-white">Michoacán</a>
+          <a href="portaloaxaca.html" class="mx-2 text-decoration-none text-white">Oaxaca</a>
+          <a href="portalpuebla.html" class="mx-2 text-decoration-none text-white">Puebla</a>
+          <a href="portaltabasco.html" class="mx-2 text-decoration-none text-white">Tabasco</a>
+          <a href="portaltapachula.html" class="mx-2 text-decoration-none text-white">Tapachula</a>
+          <a href="portalveracruz.html" class="mx-2 text-decoration-none text-white">Veracruz</a>
+          <a href="portalyucatan.html" class="mx-2 text-decoration-none text-white">Yucatán</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181B2F;">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="IMG/cropped-LOGO-CANAL-TRECE.png" alt="Canal 13" height="40" />
+        </a>
+  
+        <!-- Botón responsive -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Menú y búsqueda -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">PORTADA</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="noticias.html">NOTICIAS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="programacion.html">PROGRAMACIÓN</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="ventas.html">VENTAS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          <!-- Formulario búsqueda bien alineado -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    <!-- Título dinámico y HR -->
+    <h2 class="video-title" id="videoTitle">Nota Editorial</h2>
+    <hr class="video-hr" />
+
+    <!-- Video principal -->
+    <div class="embed-responsive embed-responsive-16by9 mb-4">
+      <iframe id="mainVideo" class="embed-responsive-item" src="https://www.youtube.com/embed/ncTQwIxP_aE" allowfullscreen></iframe>
+    </div>
+
+    <!-- Carrusel Swiper -->
+    <div class="swiper swiper-ventas">
+      <div class="swiper-wrapper swiper-wrapper-ventas">
+        <div class="swiper-slide swiper-slide-ventas" data-title="Nota Editorial" data-video="ncTQwIxP_aE">
+          <img src="https://img.youtube.com/vi/ncTQwIxP_aE/mqdefault.jpg" alt="Nota Editorial">
+        </div>
+        <div class="swiper-slide swiper-slide-ventas" data-title="Banner" data-video="QwVFdlglu0s">
+          <img src="https://img.youtube.com/vi/QwVFdlglu0s/mqdefault.jpg" alt="Banner">
+        </div>
+        <div class="swiper-slide swiper-slide-ventas" data-title="Box Banner" data-video="aHEX8aZATGc">
+          <img src="https://img.youtube.com/vi/aHEX8aZATGc/mqdefault.jpg" alt="Box Banner">
+        </div>
+        <div class="swiper-slide swiper-slide-ventas" data-title="Splash" data-video="BlfiCF1yB90">
+          <img src="https://img.youtube.com/vi/BlfiCF1yB90/mqdefault.jpg" alt="Splash">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-ventas', {
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  freeMode: true,
+});
+
+
+    const slides = document.querySelectorAll('.swiper-slide-ventas');
+    const iframe = document.getElementById('mainVideo');
+    const title = document.getElementById('videoTitle');
+
+    slides.forEach(slide => {
+      slide.addEventListener('click', () => {
+        const videoId = slide.getAttribute('data-video');
+        const videoTitle = slide.getAttribute('data-title');
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        title.textContent = videoTitle;
+      });
+    });
+  </script>
+</body>
+</html>
